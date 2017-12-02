@@ -1,0 +1,73 @@
+{
+  "name": "openapi-directory-tools",
+  "version": "0.1.0-scripts-alpha-4",
+  "bin": {
+    "odt": "bin/odt.js"
+  },
+  "dependencies": {
+    "@keyv/sqlite": "^1.2.12",
+    "@std/esm": "^0.18.0",
+    "api-spec-converter": "^2.6.0",
+    "bluebird": "^3.3.4",
+    "concurrent-transform": "^1.0.0",
+    "deep-sort-object": "^1.0.1",
+    "del": "^3.0.0",
+    "editor": "^1.0.0",
+    "glob": "^7.0.3",
+    "got": "^8.0.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-awspublish": "^3.2.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-stats": "0.0.4",
+    "gulp-util": "^3.0.8",
+    "gulplog": "^1.0.0",
+    "is-online": "^7.0.0",
+    "js-yaml": "^3.4.3",
+    "json-merge-patch": "^0.2.3",
+    "json-pointer": "^0.6.0",
+    "json-stringify-pretty-compact": "^1.0.4",
+    "jsondiffpatch": "^0.2.5",
+    "jsonpath": "^1.0.0",
+    "keyv": "^3.0.0",
+    "lodash": "^4.17.4",
+    "merge-stream": "^1.0.0",
+    "mime-db": "^1.32.0",
+    "mime-lookup": "0.0.2",
+    "mkdirp": "^0.5.1",
+    "parse-domain": "^1.1.0",
+    "sanitize-filename": "^1.5.3",
+    "serialize-error": "^2.1.0",
+    "swagger-methods": "^1.0.0",
+    "tar-stream": "^1.5.5",
+    "through2": "^2.0.3",
+    "through2-concurrent": "^1.1.1",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.5",
+    "@types/gulp-util": "^3.0.34",
+    "@types/swagger-schema-official": "^2.0.7",
+    "@types/vinyl-fs": "^2.4.8",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/APIs-guru/openapi-directory.git"
+  },
+  "scripts": {
+    "lint": "eslint --fix --format node_modules/eslint-friendly-formatter bin/*.js lib/**/*.js plugins/**/*.js sources/**/*.js tasks/**/*.js gulpfile.js gulpfile.tasks.mjs"
+  },
+  "@std/esm": {
+    "esm": "js",
+    "cjs": true
+  }
+}

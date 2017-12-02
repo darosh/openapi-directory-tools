@@ -1,0 +1,43 @@
+import {File} from '@types/gulp-util'
+import {Spec} from '@types/swagger-schema-official'
+
+interface Logo {
+  url: string
+}
+
+interface Origin {
+  url: string,
+  format: string,
+  version: string
+  'x-apisguru-direct': boolean
+}
+
+interface Info {
+  version: string,
+  'x-providerName': string,
+  'x-serviceName': string,
+  'x-logo': Logo,
+  'x-origin': Origin[]
+}
+
+interface Lead {
+  info: Info
+}
+
+interface Converter {
+  spec: Spec
+}
+
+interface Context extends File {
+  stored: Spec
+  directoryPath: string
+  directoryPathComponents: string
+  source: string // source URL
+  format: string
+  lead: Lead
+  spec: Converter,
+  swagger: Spec,
+  exPatch: Lead
+  patch: {}
+  patchPath: string
+}
